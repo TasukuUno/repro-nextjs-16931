@@ -3,10 +3,12 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "start:9.5.2": "yarn add next@9.5.2 && next build && next start",
+    "start:9.5.3": "yarn add next@9.5.3 && next build && next start"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "9.5.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "sass": "1.26.3"

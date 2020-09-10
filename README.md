@@ -1,31 +1,30 @@
-# Example app with next-sass
+# Reproduction of the following issue
 
-This example demonstrates how to use Next.js' built-in Global Sass/Scss imports and Component-Level Sass/Scss modules support.
+https://github.com/vercel/next.js/issues/16931
 
-## Deploy your own
+## To Reproduce
 
-Deploy the example using [Vercel](https://vercel.com):
+### run on next@9.5.3
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/with-next-sass)
+build and start
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-next-sass with-next-sass-app
-# or
-yarn create next-app --example with-next-sass with-next-sass-app
+```
+yarn start:9.5.3
 ```
 
-Run production build with:
+access http://localhost:3000
 
-```bash
-npm run build
-npm run start
-# or
-yarn build
-yarn start
+click link in `[NG] go to error page via server rendering` section
+
+
+### run on next@9.5.2 (woks fine)
+
+build and start
+
+```
+yarn start:9.5.2
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+access http://localhost:3000
+
+click link in `[NG] go to error page via server rendering` section
