@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "start:9.5.2": "yarn add next@9.5.2 && next build && next start",
-    "start:9.5.3": "yarn add next@9.5.3 && next build && next start"
+    "start:9.5.3": "yarn add next@9.5.3 && next build && next start",
+    "start:canary": "yarn add next@canary && next build && next start"
   },
   "dependencies": {
     "next": "9.5.3",
